@@ -69,7 +69,7 @@ const Form = () => {
           throw new Error('Please provide a valid PAN ID');
         }
         axios.post("http://localhost:8080/formData", data).then((res) => {
-          console.log(res.data);
+          alert('Successfully Registered.')
         });
       } catch (error) {
         console.log("Failed Complete the process !!!");
